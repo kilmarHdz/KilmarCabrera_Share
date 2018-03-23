@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kilmar.kilmarcabrera.MainActivity">
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="26dp"
+        android:src="@drawable/kilmar"
+        />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:text="Kilmar Roberto Hernández Cabrera"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/career"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:text="Ingeniero en Informática"/>
+
+    <LinearLayout
+        android:id="@+id/container1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/career"
+    android:layout_margin="26dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/git" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="KilmarHdz"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+
+            android:src="@drawable/tw" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="kilmarHdz"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container1"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:src="@drawable/mail" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="00137316"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+
+                android:src="@drawable/num" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="73636879"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Power By Kilmar Cabrera"
+        android:layout_below="@id/container2"
+        android:layout_marginTop="150sp"
+        android:layout_alignRight="@+id/container2"/>
+
+
+</RelativeLayout>
