@@ -8,18 +8,18 @@
     tools:context="com.kilmar.kilmarcabrera.MainActivity">
 
     <ImageView
-        android:id="@+id/foto"
+        android:id="@+id/image_profile"
         android:layout_width="150sp"
         android:layout_height="150sp"
         android:layout_centerHorizontal="true"
         android:layout_margin="26dp"
-        android:src="@drawable/kilmar"
+        android:src="@drawable/kilian"
         />
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/foto"
+        android:layout_below="@+id/image_profile"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="8dp"
         android:text="Kilmar Roberto Hernández Cabrera"
@@ -46,11 +46,13 @@
         android:layout_weight="1">
 
         <ImageView
+            android:id="@+id/icon_git"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:src="@drawable/git" />
         <TextView
+            android:id="@+id/name_git"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
@@ -64,13 +66,14 @@
         android:layout_weight="1">
 
         <ImageView
+            android:id="@+id/icon_twitter"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-
             android:src="@drawable/tw" />
 
         <TextView
+            android:id="@+id/name_twitter"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
@@ -95,11 +98,13 @@
             android:layout_weight="1">
 
             <ImageView
+                android:id="@+id/icon_mail"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:src="@drawable/mail" />
             <TextView
+                android:id="@+id/name_mail"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
@@ -113,6 +118,7 @@
             android:layout_weight="1">
 
             <ImageView
+                android:id="@+id/icon_phone"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
@@ -120,15 +126,39 @@
                 android:src="@drawable/num" />
 
             <TextView
-                android:id="@+id/number"
+                android:id="@+id/name_phone"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
                 android:text="73636879"/>
         </LinearLayout>
 
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/container2">
 
+        <Button
+            android:id="@+id/share_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Compartir Info"
+            />
+        <Button
+            android:id="@+id/share_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Compartir Imagen"
+            />
     </LinearLayout>
 
     <TextView
